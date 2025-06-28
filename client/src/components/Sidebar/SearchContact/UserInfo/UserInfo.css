@@ -1,0 +1,65 @@
+.userInfo{
+    margin-top: 2rem;
+    color: var(--color-text)
+}
+
+.avatarUser{
+    display: flex;
+    justify-content: center;
+}
+
+.avatarUser img{
+    display: block;
+    width: 250px;
+    height: auto;
+    border-radius: 5000px;
+}
+
+.i-info-search{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: var(--size-normal);
+    font-weight: var(--font-weight);
+}
+
+.i-info-search span {
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.i-info-search span:nth-child(2){
+    font-size: 1.3rem;
+    font-weight: 400
+}
+
+
+.buttons-user-info{
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0
+}
+
+.buttons-user-info button{
+    padding: 1rem 0;
+    margin: 0 1rem;
+    width: 150px;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    border-radius: .3rem;
+}
+
+.write-button{
+    background-color: #00af9c;
+    color: #111111;
+
+}
+
+.add-contact-button{
+    background-color: transparent;
+    color: #00af9c;
+
+}

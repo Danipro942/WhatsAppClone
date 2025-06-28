@@ -1,0 +1,41 @@
+* {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+
+
+}
+
+
+:root{
+    --time-transition: .5s;
+    --color-text: #e1e1e3;
+    --app-background: #090e11;
+    --app-background-rgb: 9,14,17;
+    --app-background-deeper: #090e11;
+    --second-color-bg: ;
+  
+  
+    /* Lateral Izquierdo */
+    --background-default: #131c21;
+  
+  
+    --panel-header-background: #2a2f32;
+    --background-default-active: #323739;
+    --search-input: #323739;
+    --size-normal: 1.4rem;
+    --font-weight: 500;
+    --dropdown-bg: #2a2f32;
+    --green-sure: #10e762;
+    --shadow-rgb: 0,0,0;
+  }
+
+  .avatar img{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    
+}
+
+.ui.search>.results {
+display: none !important; 
+}

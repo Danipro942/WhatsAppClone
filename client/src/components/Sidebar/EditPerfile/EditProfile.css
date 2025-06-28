@@ -1,0 +1,45 @@
+.auth-profile{
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.auth-profile button {
+    outline: none;
+    border: 0;
+    background-color: #10e762!important;
+    color: #fff;
+    padding: .8rem .5rem;
+    font-weight: 600;
+    border-radius: .5rem;
+    margin-top: .7rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+.auth-profile input {
+    width: 100%;
+    border: 1px solid rgba(34,36,38,.15);
+    outline: 0;
+    padding: 1rem .9rem;
+    border-radius: .3rem;
+    transition: all 1s;
+    background-color: var(--second-color);
+    color: var(--color-text);
+    margin: .6rem 0;
+}
+
+.avatarUser {
+    margin: auto;
+    display: block;
+    width: 250px;
+    height: auto;
+    border-radius: 5000px;
+}

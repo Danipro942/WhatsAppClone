@@ -1,0 +1,51 @@
+.h-conversation {
+    background-color: var(--panel-header-background);
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    transition: background var(--time-transition);
+}
+
+.avatar-user{
+    margin-left: 1.5rem
+}
+
+.info-user{
+    font-size: 1.4rem;
+    color: var(--color-text);
+    font-weight: 500;
+    flex-grow: 1;
+
+}
+
+.info-user span{
+    display: block;
+}
+
+.info-user span:nth-child(2){
+    font-size: .9rem;
+}
+
+.h-options{
+    display: flex;
+    flex: none;
+
+    
+}
+
+.h-info-option{
+    padding: 1.3rem;
+    display: flex; 
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.h-info-option i{
+    font-size: 1.8em;
+    cursor: pointer;
+    color: #fff;
+    opacity: .8;
+
+}
+

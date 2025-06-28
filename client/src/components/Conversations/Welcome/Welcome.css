@@ -1,0 +1,29 @@
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    color: var(--color-text);
+    position: relative
+}
+
+.welcome img {
+    height: 204px;
+    width:  360px;
+}
+
+.welcome h1 {
+    font-weight: 200;
+}
+
+.border-botom{
+    position: absolute;
+    width: 100%;
+    background-color: #25d366;
+    height: 6px;
+    bottom: 0px;
+    right: 0;
+    left: 0;
+}

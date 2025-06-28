@@ -1,0 +1,210 @@
+.header-user{
+    display: flex;
+    align-items: center;
+    height: 67px;
+    background-color: var(--panel-header-background);
+    transition: background var(--time-transition);
+
+    padding: 10px 16px;
+    flex: none;
+    justify-content: flex-end;
+    user-select: none;
+    
+}
+
+.h-info{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    /* flex-direction: column; */
+
+}
+
+
+.h-info img{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    
+}
+
+.h-info span{
+    opacity: .8;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 140px;
+    display: block;
+    user-select:all;
+
+}
+
+.h-info-name{
+    font-size: 1.4rem;
+}
+
+.h-info-number{
+    font-size: .9rem;
+}
+
+.h-options{
+    display: flex;
+    flex: none;
+
+    z-index: 500;
+
+}
+
+.h-info-option{
+    padding: 1.3rem;
+    display: flex; 
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.h-info-option i{
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+.menu-options{
+    position: relative;
+    /* display: inline-block */
+}
+
+.sub-menu{
+    visibility: hidden;
+    opacity: 0;
+    height: 100px;
+    list-style: none;
+    top: 50px;
+    position: absolute;
+    z-index: 100;
+    margin: 0;
+    background-color: var(--dropdown-bg);
+    
+    min-width: 5rem;
+    right: 30%;
+    width: 217px;
+    box-shadow: 0 2px 5px 0 rgba(var(--shadow-rgb),.26),0 2px 10px 0 rgba(var(--shadow-rgb),.16);
+    transition: visibility .3s, opacity .3s;
+
+}
+
+.menu-item{
+    width: 100%;
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 1rem 1rem;
+    color: var(--color-text);
+
+}
+
+.menu-item:hover {
+    background-color: #131c219c;
+
+}
+
+.active2 {
+    opacity: 1 !important;
+    visibility: visible;
+    transition: all .3s;
+}
+
+
+.switch {
+    background: #343D5B;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    outline: none;
+    transform: scale(.7);
+    transition: all 1s;
+  }
+  
+  .switch::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #F1F1F1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+    -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .switch.active {
+    background: orange;
+    color: #000;
+  }
+  
+  .switch.active::after {
+    right: 0;
+    left: unset;
+  }
+  
+  .switch span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;
+  }
+
+  .switch {
+	background: #343D5B;
+	border-radius: 1000px;
+	border: none;
+	position: relative;
+	cursor: pointer;
+	display: flex;
+	outline: none;
+
+  }
+
+
+  .switch::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #F1F1F1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,.2);
+}
+
+.active {
+    background: rgb(172, 171, 171);
+    color: #000;
+}
+.active::after {
+        right: 0;
+        left: unset;
+    }
+
+    .active span {
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		display: block;
+		background: none;
+		color: #fff;
+	}

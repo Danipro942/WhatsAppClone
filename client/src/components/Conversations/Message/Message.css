@@ -1,0 +1,14 @@
+.chat-message{
+    
+    height: calc(100vh - 130px);
+    width: 100%;
+    padding: 0 1rem;
+    background-image: url('../../../assets/png/bg-chat-dark.png');
+
+    overflow-y: scroll;
+}
+
+.chat-message::before{
+    opacity: 1;
+
+}

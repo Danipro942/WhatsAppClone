@@ -1,0 +1,26 @@
+.main{
+    display: flex;
+}
+
+.sidebar{
+    background: var(--background-default);
+    color: #fff;
+    width:500px;
+    height: 100vh;
+    flex: 30%;
+    position: relative;
+    transition: background var(--time-transition);
+}
+
+@media screen and (min-width: 901px) and (max-width: 1024px){
+.sidebar{
+    flex: 35%;
+}
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1300px){
+.sidebar{
+    flex: 35%;
+}
+}

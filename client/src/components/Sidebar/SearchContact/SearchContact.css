@@ -1,0 +1,42 @@
+.SearchContact{
+    margin-top: 1rem;
+    padding: 0 .5rem; 
+}
+
+
+.search-input{
+display: flex;
+align-items: center;
+}
+
+.search-users{
+    flex: 1;
+}
+
+.search-input i{
+    margin: 0 .2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 5000px;
+    transition: all .3s;
+    display: flex;
+    align-items: center;
+}
+
+
+.search-input i:hover{
+    background-color: rgba(204, 204, 204, 0.247);
+    transition: all .3s;
+}
+
+
+.usernotfound{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color: var(--color-text);
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    
+}

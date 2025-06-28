@@ -1,0 +1,30 @@
+.search-List {
+    padding: 0 1rem;
+
+    margin-top: 1rem ;
+}
+
+.ui.input {
+    width: 100% !important; 
+    color: rgba(255, 255, 255, 0.836) !important;
+}
+
+.ui.icon.input > input {
+    width: 100% !important;
+    background-color: var(--search-input);
+    transition: background var(--time-transition);
+
+    border: var(--search-input);
+    color: var(--color-text)
+}
+
+.ui.icon.input i {
+    color: #000
+
+}
+
+.ui.icon.input > input:focus {
+    background-color: var(--search-input) !important;
+    border-color: transparent;
+}
+

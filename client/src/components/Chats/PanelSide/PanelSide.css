@@ -1,0 +1,14 @@
+.panel-side{
+    margin-top: 1rem;
+    /* padding: 0 1rem ; */
+    overflow-y: scroll;
+    height: calc(100vh - 133px)
+    
+}
+
+
+
+.panel-side::-webkit-scrollbar-thumb {
+    background-color: rgba(250, 250, 250, 0.226) !important;
+    border-radius: 0px;
+}
