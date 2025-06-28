@@ -14,7 +14,7 @@ export default function Welcome() {
   return (
     <div className="welcome">
       <span>
-        <img src={svgW} alt="SVG as an image" />
+        <img src={svgW} alt="Welcome illustration" />
 
         <h1>WhatsApp Clone</h1>
         <p>La nueva manera de comunicarte con tus amigos y seres queridos</p>

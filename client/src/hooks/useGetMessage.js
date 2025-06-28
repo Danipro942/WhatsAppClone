@@ -28,7 +28,7 @@ export default function GetMessage() {
     return () => {
       stopPolling();
     };
-  }, []);
+  }, [startPolling, stopPolling]);
 
   return { data, loading, refetchMessage };
 }

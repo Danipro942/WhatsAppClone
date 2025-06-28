@@ -6,6 +6,7 @@ import { SEARCH_USER } from "../../../../gql/user";
 import "./ItemChat.css";
 import { ChatContext } from "../../../../Context/ChatContext";
 import { AuthContext } from "../../../../Context/AuthContext";
+import { useMemo } from "react";
 
 export default function ItemChat({ data, selectChat }) {
   // console.log(data)
@@ -20,7 +21,10 @@ export default function ItemChat({ data, selectChat }) {
 
   const { setUserSelect, setChatSelect } = useContext(ChatContext);
 
-  const filterID = data.members.filter((e) => e !== numberID);
+  const filterID = useMemo(
+    () => data.members.filter((e) => e !== numberID),
+    [data.members, numberID]
+  );
   console.log(filterID[0]);
 
   const chatSelect = () => {
@@ -28,19 +32,22 @@ export default function ItemChat({ data, selectChat }) {
     setChatSelect(data);
   };
 
-  useEffect(async () => {
-    try {
-      const { data } = await SearchContact({
-        variables: {
-          idNumber: filterID[0],
-        },
-      });
-      console.log(data);
-      setInfoUser(data.searchContact);
-    } catch (error) {
-      console.log(error);
-    }
-  }, []);
+  useEffect(() => {
+    const fetchUser = async () => {
+      try {
+        const { data } = await SearchContact({
+          variables: {
+            idNumber: filterID[0],
+          },
+        });
+        console.log(data);
+        setInfoUser(data.searchContact);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    fetchUser();
+  }, [SearchContact, filterID]);
 
   console.log(InfoUser);
   if (InfoUser === null) return null;
